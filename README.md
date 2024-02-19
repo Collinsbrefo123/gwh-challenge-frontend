@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+#Todo App
+This is a simple Todo application built using React.js, Django, Reactstrap, and Yup. It allows users to create new todos and view existing todos along with their status.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Features
+Create new todos with title, description, and status.
+View existing todos with their current status.
+Client-side validation using Yup.
+Technologies Used
+Frontend: React.js
+Styling: Reactstrap
+Validation: Yup
+Backend: Django
+API Communication: Axios
 
-## Available Scripts
+##Getting Started
+1. To run this application locally, follow these steps:
+### git clone https://github.com/Collinsbrefo123/gwh-challenge-frontend.git
 
-In the project directory, you can run:
+2. Navigate to the project directory:
+### cd gwh-challenge-frontend
 
-### `npm start`
+3. Install dependencies:
+### npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Start the frontend development server:
+### npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. Ensure yotheur Django backend application is running and accessible.
 
-### `npm test`
+Usage
+To create a new todo, enter the title, description, and status in the input fields and click the "Add Todo" button.
+Existing todos will be displayed with their title, description, and status.
+Status is displayed as a colored badge indicating the current status of the todo.
+Styling
+Styling for this application is done using Reactstrap, a library that provides Bootstrap components for React. The styling is kept simple and minimalistic for a clean user interface.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Validation
+Client-side validation is performed using Yup, a JavaScript schema validation library. It ensures that the input fields for creating a new todo are not empty and meet certain criteria before submission.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+API Communication
+This application communicates with a Django backend to fetch and store todos. Axios is used for making HTTP requests to the Django API endpoints.
